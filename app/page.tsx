@@ -5,6 +5,8 @@ import styles from './page.module.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+  const url = process.env.URL || 'http://localhost:3000'
+  console.log(url)
   return (
     <main className={styles.main}>
       <div className={styles.description}>
